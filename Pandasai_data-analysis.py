@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import seaborn as sns
 def pandas_ai(df):
-    llm = GoogleGemini(api_key='AIzaSyDIP4QBtxSJ_a6kxZx4Cw8igEZ2XDEq4Xs')
+    llm = GoogleGemini(api_key='YOUR_API_KEY')
     sm = SmartDataframe(df,config={'llm':llm})
     # response = sm.chat(prompt+query)
     if "messages" not in st.session_state:
